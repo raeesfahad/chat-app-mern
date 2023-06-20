@@ -1,0 +1,10 @@
+ const toggleVideo = () => {
+        setVideoEnabled((prevVideoEnabled) => !prevVideoEnabled);
+        stream.getVideoTracks()[0].enabled = !videoEnabled;
+      };
+
+
+      const toggleAudio = () => {
+        setAudioEnabled((prevVideoEnabled) => !prevVideoEnabled);
+        stream.getAudioTracks()[0].enabled = !audioEnabled;
+      };
